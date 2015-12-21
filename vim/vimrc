@@ -42,5 +42,10 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
+" vim-better-whitespace
+" shortcut to strip
+nmap <leader><space> :StripWhitespace<CR>
+
+
 " helpers for vimrc itself
 autocmd! bufwritepost .vimrc source ~/.vimrc
