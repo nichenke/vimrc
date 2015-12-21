@@ -20,6 +20,7 @@ minimal vimrc using pathogen
 * Nerdtree - [https://github.com/scrooloose/nerdtree]()
 * cscope-maps - [https://github.com/joe-skb7/cscope-maps.git]()
 * vim-better-whitespace - [https://github.com/ntpeters/vim-better-whitespace]()
+* vim-airline - [https://github.com/bling/vim-airline]()
 
 ## Colorthemes
 These can be set in vimrc to personal needs.
