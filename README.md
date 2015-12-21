@@ -21,6 +21,7 @@ minimal vimrc using pathogen
 * cscope-maps - [https://github.com/joe-skb7/cscope-maps.git]()
 * vim-better-whitespace - [https://github.com/ntpeters/vim-better-whitespace]()
 * vim-airline - [https://github.com/bling/vim-airline]()
+* vim-indent-guides - [https://github.com/nathanaelkane/vim-indent-guides]()
 
 ## Colorthemes
 These can be set in vimrc to personal needs.
