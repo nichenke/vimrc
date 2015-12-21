@@ -9,11 +9,28 @@ execute pathogen#infect()
 syntax on
 filetype plugin indent on
 
+" color themes & light bg
+set background=dark
+
+"let g:solarized_termcolors=256
+"colorscheme solarized
+"
+colorscheme jellybeans
+
+" set a highlight at 100 chars & 120+ to show line wrap goodness
+let &colorcolumn="100,".join(range(120,999),",")
+" if we want a really bold color column
+"highlight ColorColumn cterm=bold ctermbg=234 guibg=#003333
+
 " other options for vim
 set nu
 
-" add shortcut for nerdtree
+" NERDtree options
 map <Leader>n :NERDTreeToggle<CR>
+let g:nerdtree_tabs_open_on_console_startup = 1
+
+" close vim when only window left is nerdtree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 "syntastic settings
 set statusline+=%#warningmsg#
