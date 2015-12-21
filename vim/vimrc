@@ -1,0 +1,10 @@
+runtime bundle/vim-pathogen/autoload/pathogen.vim
+
+execute pathogen#infect()
+
+"syntax configuration
+syntax on
+filetype plugin indent on
+
+" helpers for vimrc itself
+autocmd! bufwritepost .vimrc source ~/.vimrc
