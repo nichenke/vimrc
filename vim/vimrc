@@ -41,6 +41,8 @@ let g:syntastic_enable_signs=1
 " vim-better-whitespace
 " shortcut to strip
 nmap <leader><space> :StripWhitespace<CR>
+" doesn't seem to hightight on dark backgrounds without this
+hi ExtraWhitespace guibg=#990000 ctermbg=red
 
 " vim-airline
 set laststatus=2
