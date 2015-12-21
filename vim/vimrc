@@ -48,5 +48,8 @@ hi ExtraWhitespace guibg=#990000 ctermbg=red
 set laststatus=2
 let g:airline#extensions#csv#enabled = 0
 
+" turn on vim-indent-guides at startup
+let g:indent_guides_enable_on_vim_startup = 1
+
 " helpers for vimrc itself
 autocmd! bufwritepost .vimrc source ~/.vimrc
