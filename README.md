@@ -18,6 +18,7 @@ minimal vimrc using pathogen
 * Pathogen - [https://github.com/tpope/vim-pathogen]()
 * Syntastic - [https://github.com/scrooloose/syntastic]()
 * Nerdtree - [https://github.com/scrooloose/nerdtree]()
+* cscope-maps - [https://github.com/joe-skb7/cscope-maps.git]()
 
 ## Colorthemes
 These can be set in vimrc to personal needs.

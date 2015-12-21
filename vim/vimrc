@@ -14,7 +14,7 @@ set background=dark
 
 "let g:solarized_termcolors=256
 "colorscheme solarized
-"
+
 colorscheme jellybeans
 
 " set a highlight at 100 chars & 120+ to show line wrap goodness

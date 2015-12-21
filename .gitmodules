@@ -13,3 +13,6 @@
 [submodule "vim/bundle/jellybeans.vim"]
 	path = vim/bundle/jellybeans.vim
 	url = https://github.com/nanotech/jellybeans.vim.git
+[submodule "vim/bundle/cscope-maps"]
+	path = vim/bundle/cscope-maps
+	url = https://github.com/joe-skb7/cscope-maps.git
