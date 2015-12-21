@@ -49,7 +49,36 @@ set laststatus=2
 let g:airline#extensions#csv#enabled = 0
 
 " turn on vim-indent-guides at startup
-let g:indent_guides_enable_on_vim_startup = 1
+let g:indent_guides_enable_on_vim_startup = 0
 
 " helpers for vimrc itself
 autocmd! bufwritepost .vimrc source ~/.vimrc
+
+" proper formatting for various file types
+" add comment auto add on newline, autowrap and add leader in middle
+:set formatoptions+=roc
+
+" Treat JSON files like JavaScript
+au BufNewFile,BufRead *.json set ft=javascript
+
+" make Python follow Versity pylintrc
+au FileType python setlocal softtabstop=4 tabstop=4 shiftwidth=4 expandtab shiftround autoindent textwidth=99
+
+" Versity C style
+au FileType c setlocal softtabstop=8 tabstop=8 shiftwidth=8 noexpandtab shiftround autoindent textwidth=99
+
+" Versity shell style
+au FileType sh setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4 autoindent textwidth=99
+
+" In Versity Makefiles, use real tabs, not tabs expanded to spaces
+au FileType make setlocal noexpandtab
+
+" Make sure all mardown files have the correct filetype set and setup wrapping
+au BufRead,BufNewFile *.{md,markdown,mdown,mkd,mkdn,txt} setf markdown
+au FileType markdown call s:setupWrapping()
+
+" Pretty YAML files too
+autocmd FileType yaml set autoindent shiftwidth=2 softtabstop=2 expandtab wrap linebreak textwidth=90 nolist
+
+" helper for key files and such
+set binary noeol
