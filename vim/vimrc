@@ -1,3 +1,6 @@
+" set , as leader command
+let mapleader=','
+
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 
 execute pathogen#infect()
@@ -8,6 +11,9 @@ filetype plugin indent on
 
 " other options for vim
 set nu
+
+" add shortcut for nerdtree
+map <Leader>n :NERDTreeToggle<CR>
 
 "syntastic settings
 set statusline+=%#warningmsg#
