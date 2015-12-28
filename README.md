@@ -22,6 +22,7 @@ minimal vimrc using pathogen
 * vim-better-whitespace - [https://github.com/ntpeters/vim-better-whitespace]()
 * vim-airline - [https://github.com/bling/vim-airline]()
 * vim-indent-guides - [https://github.com/nathanaelkane/vim-indent-guides]()
+* vim-fugitive - [https://github.com/tpope/vim-fugitive]()
 
 ## Colorthemes
 These can be set in vimrc to personal needs.
