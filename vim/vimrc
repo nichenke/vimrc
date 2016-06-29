@@ -81,3 +81,8 @@ au BufRead,BufNewFile *.{md,markdown,mdown,mkd,mkdn,txt} setf markdown
 
 " Pretty YAML files too
 autocmd FileType yaml set autoindent shiftwidth=2 softtabstop=2 expandtab wrap linebreak textwidth=90 nolist
+
+" commit message spell checking and wrapping
+autocmd Filetype gitcommit setlocal spell textwidth=72
+" Add easy spell checking with <leader>s
+nmap <leader>s :setlocal spell!<cr>
