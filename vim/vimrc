@@ -27,6 +27,7 @@ set nu
 
 " NERDtree options
 map <Leader>n :NERDTreeToggle<CR>
+map <Leader>f :NERDTreeFind<CR>
 let g:nerdtree_tabs_open_on_console_startup = 1
 
 " close vim when only window left is nerdtree
